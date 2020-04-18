@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace UbisoftTest.Sdk
 {
-    class Leaderboard
+    public class Leaderboard
     {
-        public List<Player> players;
-        public List<Match> matches;
+        public List<Player> Players { get; set; }
+        public List<Match> Matches { get; set; }
     }
 }

@@ -1,14 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace UbisoftTest.Sdk
 {
-    class Match
+    public class Match
     {
-        public int kill;
-        public int score;
-        public DateTime time;
-        public List<Player> players;
+        public int Kill { get; set; }
+        public int Score { get; set; }
+        public DateTime Time { get; set; }
+        public List<Player> Players { get; set; }
     }
 }
