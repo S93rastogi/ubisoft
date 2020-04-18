@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace UbisoftTest.Sdk
 {
@@ -8,6 +7,5 @@ namespace UbisoftTest.Sdk
         public int Kill { get; set; }
         public int Score { get; set; }
         public DateTime Time { get; set; }
-        public List<Player> Players { get; set; }
     }
 }
