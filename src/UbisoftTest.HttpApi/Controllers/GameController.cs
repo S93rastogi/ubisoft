@@ -33,6 +33,7 @@ namespace UbisoftTest.HttpApi.Controllers
         [HttpGet]
         public async Task<List<string>> HighScorer(string match, DateTime time)
         {
+            //foreach player -> foreachmach -> search max score
             return null;
         }
 
@@ -40,6 +41,7 @@ namespace UbisoftTest.HttpApi.Controllers
         [HttpGet]
         public async Task<List<string>> GetPlayerStatus(string payerName)
         {
+            //return player object
             return null;
         }
 
