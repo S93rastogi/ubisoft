@@ -10,5 +10,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.2.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\UbisoftTest.Sdk\UbisoftTest.Sdk.csproj" />
+  </ItemGroup>
+
 
 </Project>

@@ -3,6 +3,7 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using UbisoftTest.Sdk;
 
 namespace UbisoftTest.HttpApi.Controllers
 {
@@ -20,11 +21,7 @@ namespace UbisoftTest.HttpApi.Controllers
 
         //Replace parameter values with model
         [HttpPost]
-        public void MatchDetails(
-            string player,
-            string match,
-            int kills,
-            int score)
+        public void MatchDetails(string playerName, [FromBody] Match match)
         {
 
         }
@@ -39,7 +36,7 @@ namespace UbisoftTest.HttpApi.Controllers
 
         //return model instead of string
         [HttpGet]
-        public async Task<List<string>> GetPlayerStatus(string payerName)
+        public async Task<List<Player>> GetPlayerStatus(string payerName)
         {
             //return player object
             return null;
@@ -47,7 +44,7 @@ namespace UbisoftTest.HttpApi.Controllers
 
         //return model instead of string
         [HttpGet]
-        public async Task<List<string>> PlayerStatusByMatch(string match, DateTime time)
+        public async Task<List<Player>> PlayerStatusByMatch(string match, DateTime time)
         {
             return null;
         }
