@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace UbisoftTest.Sdk
 {
-    class Player
+    public class Player
     {
-        public int playerid;
-        public String playerName;
-        public List<Match> matches;
+        public int Playerid { get; set; }
+        public String PlayerName { get; set; }
+        public List<Match> Matches { get; set; }
     }
 }
